@@ -7,3 +7,4 @@
           </div>
         </div>
 </div>
+<script src="public/js/ajax/ajax_handle_kh.js"></script>

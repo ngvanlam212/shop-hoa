@@ -6,7 +6,11 @@
 					if (isset($_SESSION['giohang']))
 						echo '<div class="alert alert-warning" role="alert">
 	            		Vui lòng đăng nhập để tiếp tục mua hàng!!!
-						</div>';  
+						</div>'; 
+					if (isset($_SESSION['checkBlock']))
+					echo '<div class="alert alert-warning" role="alert">
+					'.$_SESSION['checkBlock'].'
+					</div>';  
 				?>
 				<form method="post">
 					<input type="email" name="email" placeholder="Email" required=" " value="<?php if (isset($_POST['email'])) echo $_POST['email'] ?>">

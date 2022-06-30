@@ -11,14 +11,19 @@ class C_dang_nhap
             $mat_khau=$_POST['mat_khau'];
             $kq=$m_khach_hang->Doc_khach_hang_theo_email_pass($email,$mat_khau);
             if($kq){
-                $_SESSION['hoTen']=$kq['ten_khach_hang'];
-                $_SESSION['makh']=$kq['ma_khach_hang'];
-                $_SESSION['email']=$kq['email'];
-                if(isset($_SESSION['giohang'])){
-                    header('Location: khach-hang.php');
+                if ($kq['isBlock'] == 1) {
+                    $_SESSION['checkBlock'] = 'Tài khoản đã bị khóa!';
                 }
                 else{
-                    header('Location: .');
+                    $_SESSION['hoTen']=$kq['ten_khach_hang'];
+                    $_SESSION['makh']=$kq['ma_khach_hang'];
+                    $_SESSION['email']=$kq['email'];
+                    if(isset($_SESSION['giohang'])){
+                        header('Location: khach-hang.php');
+                    }
+                    else{
+                        header('Location: .');
+                    }
                 }
             }
             else{
