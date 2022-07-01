@@ -100,7 +100,7 @@
                 <ul class="bsm_header_nav_left">
                     <li><a href="tin_tuc.php">Tin Tức</a></li>
                     <?php 
-                        if (isset($_SESSION['makh']))
+                        if (isset($_SESSION['hoTen']))
                             echo '<li><a href="check_hoa_don.php">Check hóa đơn</a></li>';
                     ?>
                     <li><a href="lien_he.php">Liên hệ</a></li>

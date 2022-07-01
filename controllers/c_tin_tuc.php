@@ -16,7 +16,7 @@ class C_tin_tuc
         if (isset($_GET['id'])) {
             $id = $_GET['id'];
         }
-        include("models/m_tin_tuc.php");
+        include("./models/m_tin_tuc.php");
         $m_tin_tuc = new M_tin_tuc();
         $tin_tuc = $m_tin_tuc->chi_tiet_tt($id);
         $MaLoaiTin = $tin_tuc['MaLoaiTin'];

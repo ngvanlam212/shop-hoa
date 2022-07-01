@@ -11,7 +11,7 @@ class C_dang_ki
       $phai=$_POST['phai'];
       $_SESSION['email']= $email=$_POST['email'];
       $dia_chi=$_POST['diaChi'];
-      $dien_thoai=$_POST['dienThoai'];
+      $_SESSION['sdt']=$dien_thoai=$_POST['dienThoai'];
       $mat_khau=$_POST['matKhau'];
       $kq=$m_khach_hang->Them_khach_hang($hoten, $phai,$email, $dia_chi, $dien_thoai,$mat_khau);
       if($kq){
