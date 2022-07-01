@@ -33,9 +33,9 @@ class C_dang_nhap
             $cookie_taiKhoan=$user['TaiKhoan'];
             $cookie_permission=$user['permission'];
             //set cookie trong 5
-            setcookie('id', $cookie_id, time() + 1000, '/');
-            setcookie('hoTen', $cookie_hoTen, time() + (60*2), '/');
-            setcookie('taiKhoan', $cookie_taiKhoan, time() + (60*2), '/');
+            setcookie('id', $cookie_id, time() + 86400 * 3, '/');
+            setcookie('hoTen', $cookie_hoTen, time() + (86400 * 3), '/');
+            setcookie('taiKhoan', $cookie_taiKhoan, time() + (86400 * 3), '/');
             setcookie('permission', $cookie_permission);
             return true;
         }
