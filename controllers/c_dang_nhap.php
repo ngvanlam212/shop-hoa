@@ -18,6 +18,7 @@ class C_dang_nhap
                     $_SESSION['hoTen']=$kq['ten_khach_hang'];
                     $_SESSION['makh']=$kq['ma_khach_hang'];
                     $_SESSION['email']=$kq['email'];
+                    $_SESSION['sdt']=$kq['dien_thoai'];
                     if(isset($_SESSION['giohang'])){
                         header('Location: khach-hang.php');
                     }

@@ -6,11 +6,11 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-2">
                 <img src="http://45.77.235.110/~chufarmc/public/img/error.jpg" alt="">
             </div>
             <div class="col-lg-8">
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-sm-6 col-sm-offset-3">
                         <form method="POST">
                             <div id="imaginary_container"> 
@@ -25,7 +25,7 @@
                             </div>
                         </form>
                         </div>
-                    </div>
+                    </div> -->
                 <div class="w3-responsive">
                     <table class="w3-table-all">
                         <thead>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 30, 2022 lúc 04:36 PM
+-- Thời gian đã tạo: Th6 30, 2022 lúc 06:45 PM
 -- Phiên bản máy phục vụ: 10.4.22-MariaDB
 -- Phiên bản PHP: 7.4.26
 
@@ -274,7 +274,7 @@ CREATE TABLE `khach_hang` (
   `dia_chi` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `dien_thoai` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `matKhau` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
-  `isBlock` int(11) NOT NULL
+  `isBlock` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -298,7 +298,7 @@ INSERT INTO `khach_hang` (`ma_khach_hang`, `ten_khach_hang`, `phai`, `email`, `d
 (60, 'Lan', 0, 'lan@gmail.com', '135 Nguyễn Huệ', '546546', '', 0),
 (61, 'Tèo', 1, 'teo@gmail.com', '194 Lê Hồng Phong', '0938184297', '', 0),
 (62, 'sdf', 1, 'dfs@gmail.com', 'dsads', '214312', '', 0),
-(63, 'anh', 0, 'vuphuongang020497@gmail.com', '194 Lê Hồng Phong', '0938184297', '', 0),
+(63, 'anh', 0, 'vuphuongang020497@gmail.com', '194 Lê Hồng Phong', '0938184297', '', 1),
 (64, 'Hòa', 1, 'hoa@gmail.com', '218 Lê Văn Sỹ', '0565165654', '', 0),
 (65, 'Loan', 0, 'loan123@gmail.com', '123 Lê Lợi', '3216546', '', 0),
 (66, 'Minh', 1, 'minh@gmail.com', '194 Lê Hồng Phong', '0938184297', '', 0),
