@@ -4,7 +4,7 @@ class M_khach_hang extends database
 {
   public function Them_khach_hang($ten_kh,$phai,$email,$dia_chi,$dien_thoai,$mat_khau){
     $bm = md5($mat_khau);
-    $sql="INSERT INTO  khach_hang values(NULL, '$ten_kh','$phai','$email','$dia_chi','$dien_thoai', '$bm')";
+    $sql="INSERT INTO khach_hang values(NULL, '$ten_kh','$phai','$email','$dia_chi','$dien_thoai', '$bm', 0)";
     return $this->execute($sql);
   }
   public function Doc_khach_hang_theo_email_pass($email,$mk)
